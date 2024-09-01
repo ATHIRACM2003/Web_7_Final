@@ -1,0 +1,157 @@
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    padding: 0px 20px;
+    padding-top: 30px;
+}
+
+.navbar {
+    background-color: #032432; 
+}
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem; 
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.page-button {
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.page-button.active {
+    font-weight: bold;
+    background-color: #efefef;
+}
+
+.paginationButton {
+    padding: 8px 16px;
+    margin: 0 5px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    color: #101010;
+    background-color: #efefef;
+    border: 2px solid #101010;
+}
+
+.paginationButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.paginationButton:hover:not(:disabled) {
+    background-color: #101010;
+    color: white;
+    transition: ease-in 0.5s;
+}
+
+
+.fetchButton{
+    padding: 8px 16px ;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    color: #101010;
+    background-color: #efefef;
+    border: 2px solid #101010;
+    margin-top: 20px ;
+}
+
+.fetchButton:hover{
+    background-color: #101010;
+    color: white;
+    transition:  ease-in 0.5s;
+}
+
+.question-container{
+    background-color: rgb(181, 246, 239);
+    width: 90%;
+    margin:auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.heading{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+    margin: 18px 0px;
+}
+
+.booklist{
+    width: 93%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.single-book{
+    padding:10px;
+    border-bottom: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.single-book:hover{
+    padding:10px;
+    border-bottom: 2px solid rgb(245, 231, 231);
+    color: black;
+    background-color: rgb(233 233 233);
+    transition: ease-in 0.3s;
+}
+
+.book-info{
+    background-color: rgb(216, 245, 245);
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    max-width: 300px;
+}
+
+.book-title{
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.book-author{
+    font-size: 15px;
+    text-align: left;
+    font-style: italic;
+}
+.filt{
+width: 200px;
+border-radius: 5px;
+border: 1px solid black;
+}
+.book-genre, .book-cost{
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.book-desc{
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.loading{
+    display: none;
+    text-align: center;
+    font-size: 18px;
+    padding: 40px 20px ;
+    color: rgb(193, 193, 193);
+}
